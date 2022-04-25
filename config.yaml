@@ -1,0 +1,13 @@
+# websocket server address 
+addr: localhost:8080
+maxtime: 1 # seconds
+
+# Http hosts are used for checking router status. 
+# Http requests will be sent to these addresses. 
+# If all of them are not available, the router 
+# is considered as gone offline. 
+http_hosts:
+  - url: http://localhost:8081/
+    request: sample text
+    response: sample text
+  - url: http://localhost:8082/
